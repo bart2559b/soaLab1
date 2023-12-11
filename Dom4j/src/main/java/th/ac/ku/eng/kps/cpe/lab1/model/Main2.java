@@ -13,7 +13,7 @@ public class Main2 {
 		
 		BookStore2 b = new BookStore2() ;
 		b.setIsbn("0123456001");
-		b.setTitle("Java For Dummies");
+		//b.setTitle("Java For Dummies");
 		b.setAuthor("Tan Ah Teck");
 		b.setAuthor("Gnu");
 		b.setCatagory("Programming");
@@ -22,7 +22,14 @@ public class Main2 {
 		b.setPrice(19.99);
 		
 		
-
+		if(b.getTitle().isBlank()) {
+			System.out.println("yolo");
+		} else {
+			System.out.println("no");
+		}
+		
+		
+		/*
 		Document doc = DocumentFactory.getInstance().createDocument();
 		doc.addComment("bookstore2.xml");
 		
@@ -54,7 +61,7 @@ public class Main2 {
 		
 		
 		
-
+		
 		FileOutputStream fos = new FileOutputStream("bookstore2.xml");
 		OutputFormat format = OutputFormat.createPrettyPrint();
 		XMLWriter writer = new XMLWriter(fos, format);
@@ -62,6 +69,9 @@ public class Main2 {
 		writer.flush();
 		writer.close();
 		fos.close();
+		*/
+		
+		
 		
 	}
 }

@@ -4,7 +4,7 @@
 <bookstore>
   <book ISBN="0123456001">
     <title>Java For Dummies</title>
-    <author>jee</author>
+    <author>Tan Ah Teck</author>
     <catagory>Programming</catagory>
     <year>2009</year>
     <edition>7</edition>

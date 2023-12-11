@@ -13,8 +13,11 @@ public class BookStore2 {
 	private String language;
 	
 	public BookStore2() {
+		this.title = "";
+		this.edition = 0;
 		this.author = new ArrayList<>();
 		this.catagory= new ArrayList<>();
+		this.language= "";
 	}
 
 	public void setIsbn(String string) {
