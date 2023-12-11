@@ -22,7 +22,7 @@ public class read2 {
 				System.out.println("Student roll no : " + node.valueOf("@rollno"));
 				System.out.println("First Name : " + node.selectSingleNode("firstname").getText());
 				System.out.println("Last Name : " + node.selectSingleNode("lastname").getText());
-				System.out.println("First Name : " + node.selectSingleNode("nickname").getText());
+				System.out.println("Nick Name : " + node.selectSingleNode("nickname").getText());
 				System.out.println("Marks : " + node.selectSingleNode("marks").getText());
 			}
 
