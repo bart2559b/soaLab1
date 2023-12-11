@@ -21,6 +21,7 @@ public class Main {
 		b.setPrice(19.99);
 
 		Document doc = DocumentFactory.getInstance().createDocument();
+		doc.addComment("bookstore.xml");
 		
 		Element bookstore = doc.addElement("bookstore");
 		
@@ -45,7 +46,7 @@ public class Main {
 		elem = book.addElement("price");
 		elem.addText(Double.toString(b.getPrice()));
 
-		FileOutputStream fos = new FileOutputStream("lab6W.xml");
+		FileOutputStream fos = new FileOutputStream("bookstore.xml");
 		OutputFormat format = OutputFormat.createPrettyPrint();
 		XMLWriter writer = new XMLWriter(fos, format);
 		writer.write(doc);
