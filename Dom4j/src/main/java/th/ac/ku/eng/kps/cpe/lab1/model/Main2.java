@@ -11,10 +11,11 @@ import org.dom4j.io.XMLWriter;
 public class Main2 {
 	public static void main(String[] args) throws Exception {
 		
-		BookStore b = new BookStore() ;
+		BookStore2 b = new BookStore2() ;
 		b.setIsbn("0123456001");
 		b.setTitle("Java For Dummies");
 		b.setAuthor("Tan Ah Teck");
+		b.setAuthor("Gnu");
 		b.setCatagory("Programming");
 		b.setYear(2009);
 		b.setEdition((byte)7);
@@ -34,10 +35,12 @@ public class Main2 {
 		elem.addText(b.getTitle());
 		
 		elem = book.addElement("author");
-		elem.addText(b.getAuthor());
+		elem.addText(b.getAuthor().get(0));
+		elem = book.addElement("author");
+		elem.addText(b.getAuthor().get(1));
 		
 		elem = book.addElement("catagory");
-		elem.addText(b.getCatagory());
+		elem.addText(b.getCatagory().get(0));
 		
 		elem = book.addElement("year");
 		elem.addText(Integer.toString(b.getYear()));

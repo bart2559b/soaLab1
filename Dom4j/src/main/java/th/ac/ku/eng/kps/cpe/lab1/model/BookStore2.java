@@ -1,17 +1,20 @@
 package th.ac.ku.eng.kps.cpe.lab1.model;
 
+import java.util.*;
 
 public class BookStore2 {
 	private String title;
-	private String author;
-	private String catagory;
+	private List<String> author;
+	private List<String> catagory;
 	private int year;
 	private Byte edition;
 	private double price;
 	private String isbn;
+	private String language;
 	
 	public BookStore2() {
-		
+		this.author = new ArrayList<>();
+		this.catagory= new ArrayList<>();
 	}
 
 	public void setIsbn(String string) {
@@ -29,16 +32,16 @@ public class BookStore2 {
 	}
 
 	public void setAuthor(String string) {
-		this.author = string;
+		this.author.add(string);
 	}
-	public String getAuthor() {
+	public List<String> getAuthor() {
 		return this.author;
 	}
 
 	public void setCatagory(String string) {
-		this.catagory = string;
+		this.catagory.add(string);
 	}
-	public String getCatagory() {
+	public List<String> getCatagory() {
 		return this.catagory;
 	}
 
@@ -62,6 +65,14 @@ public class BookStore2 {
 	}
 	public double getPrice() {
 		return this.price;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
 	}
 	
 }
