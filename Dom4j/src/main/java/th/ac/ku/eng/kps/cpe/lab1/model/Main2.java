@@ -21,7 +21,6 @@ public class Main2 {
 		b.setEdition((byte)7);
 		b.setPrice(19.99);
 		
-		
 		if(b.getTitle().isBlank()) {
 			System.out.println("yolo");
 		} else {
@@ -29,7 +28,6 @@ public class Main2 {
 		}
 		
 		
-		/*
 		Document doc = DocumentFactory.getInstance().createDocument();
 		doc.addComment("bookstore2.xml");
 		
@@ -37,6 +35,7 @@ public class Main2 {
 		
 		Element book = bookstore.addElement("book");
 		book.addAttribute("ISBN", b.getIsbn());
+
 
 		Element elem = book.addElement("title");
 		elem.addText(b.getTitle());
@@ -69,7 +68,7 @@ public class Main2 {
 		writer.flush();
 		writer.close();
 		fos.close();
-		*/
+		
 		
 		
 		
