@@ -1,7 +1,7 @@
 package th.ac.ku.eng.kps.cpe.lab1.model;
 
 
-public class BookStore {
+public class BookStore2 {
 	private String title;
 	private String author;
 	private String catagory;
@@ -10,7 +10,7 @@ public class BookStore {
 	private double price;
 	private String isbn;
 	
-	public BookStore() {
+	public BookStore2() {
 		
 	}
 
