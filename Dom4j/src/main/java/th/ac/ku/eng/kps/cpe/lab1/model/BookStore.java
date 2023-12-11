@@ -2,13 +2,13 @@ package th.ac.ku.eng.kps.cpe.lab1.model;
 
 
 public class BookStore {
-	public String title;
-	public String author;
-	public String catagory;
-	public int year;
-	public Byte edition;
-	public double price;
-	public String isbn;
+	private String title;
+	private String author;
+	private String catagory;
+	private int year;
+	private Byte edition;
+	private double price;
+	private String isbn;
 	
 	public BookStore() {
 		this.title = "";
